@@ -1,0 +1,9 @@
+# Runs the airwick program every time a message is received
+# in the relevant cloud topic.
+
+name: Airwick
+entrypoint: airwick.toit
+
+triggers:
+  on_pubsub_topic:
+   - "cloud:airwick"
